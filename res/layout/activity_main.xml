@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_bg_default" >
+
+    <TextView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="聊天" />
+    
+    <ListView 
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        >
+        
+    </ListView>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bar"
+        >
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" 
+            android:background="@drawable/login_edit_normal"
+            />
+        <Button 
+            android:id="@+id/send"
+            android:layout_width="80dp"
+            android:layout_height="50dp" 
+            android:layout_alignParentRight="true"
+            android:background="@drawable/send_btn_normal"
+            android:text="发送"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+</RelativeLayout>
