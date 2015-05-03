@@ -2,8 +2,8 @@ package com.george.chat;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -93,7 +93,7 @@ public class ChatAdapter extends BaseAdapter
         
         ChatMessage chatMessage = (ChatMessage)getItem(position);
         
-        viewHolder.date.setText("dd");
+        viewHolder.date.setText(new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.CHINA).format(chatMessage.getDate()));
         viewHolder.message.setText(chatMessage.getMessage());
         
         return convertView;

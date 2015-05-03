@@ -1,8 +1,9 @@
 package com.george.chat;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class ChatMessage
+public class ChatMessage implements Serializable
 {
 
     private Date date;
